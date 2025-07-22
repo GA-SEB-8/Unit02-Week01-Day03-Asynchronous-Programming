@@ -4,4 +4,15 @@ const axios = require("axios")
 
 const allStudents = axios.get("https://omar-ga-class.onrender.com/students")
 
-console.log(allStudents)
+// console.log(allStudents)
+
+// 1. add async before the function
+// 2. put await infront of any asynchrnous code that is returning a promise
+async function getStudents(){
+    const allStudents = await axios.get("https://omar-ga-class.onrender.com/students")
+
+    console.log(allStudents.data)
+
+}
+
+getStudents()
