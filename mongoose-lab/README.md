@@ -29,13 +29,13 @@
 #### 3. Model Definition (in `models/Recipe.js`)
 
 Create a model folder and create a Recipe.js file inside. create the model with the following fields:
-
-| Field        | Type      | Constraints                 |
-| ------------ | --------- | --------------------------- |
-| name         | String    | Required                    |
-| ingredients  | \[String] | Must be an array of strings |
-| cookingTime  | Number    | Must be greater than 0      |
-| isVegetarian | Boolean   | Optional                    |
+| Field        | Type      | Constraints                                            |
+|--------------|-----------|--------------------------------------------------------|
+| name         | String    | Required                                               |
+| ingredients  | [String]  | Must be an array of strings                            |
+| instructions | String    | Optional                                               |
+| prepTime     | Number    | Optional                                               |
+| difficulty   | String    | Must be one of 'Easy', 'Medium', 'Hard'; default: 'Easy' |
 
 * Use the Mongoose Schema.
 * Export the model.
