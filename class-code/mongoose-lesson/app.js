@@ -68,11 +68,11 @@ async function getAllBooks(){
 
 
     // const allBooks = await Book.find({releaseYear: 1999})
-    const foundBook = await Book.findById("687f8936814cbbea199c5fdc")
+    const foundBook = await Book.findById("687f8936814cbbea199c5fdd")
     console.log(foundBook)
 }
 
-// getAllBooks()
+getAllBooks()
 
 
 
@@ -107,7 +107,7 @@ async function deleteBook(){
 
 
 
-deleteBook()
+// deleteBook()
 
 
  /* 
