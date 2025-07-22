@@ -29,7 +29,7 @@ async function deleteStudent(){
     
 }
 
-deleteStudent()
+// deleteStudent()
 
 
 
@@ -38,3 +38,15 @@ async function createStudent(){
 }
 
 // createStudent()
+
+
+
+try{
+console.lg("Hello from try")
+}
+catch(error){
+    console.log("ERROR", error)
+}
+
+
+console.log("amna" , {name:"Something"})

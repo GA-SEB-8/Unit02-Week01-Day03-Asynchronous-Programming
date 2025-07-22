@@ -55,7 +55,7 @@ Go to the [REST Countries API Documentation](https://restcountries.com/) and rea
 Assume we have a fictional API available at:
 
 ```
-https://students-api-0l1u.onrender.com/students
+https://omar-ga-class.onrender.com/
 ```
 
 ---
