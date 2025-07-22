@@ -39,24 +39,21 @@ async function createBook(){
     // .create makes a new book for me
     const newBook = {
         title: "Harry Potter 2",
-        author: "JK Rowling",
-        genres: ["adventure","Sci-Fi"],
-        price: 10,
-        releaseYear: 2001,
-        isBestSeller:true
+
     }
 
     const createdBook = await Book.create(newBook)
     console.log(createdBook)
 }
 
-// createBook()
+createBook()
 
 
 async function getAllBooks(){
 // find(): returns all the books in the collections
+// Book.find({releaseYear: 1999}): returns only the book that matches the condition
     const allBooks = await Book.find({releaseYear: 1999})
     console.log(allBooks)
 }
 
-getAllBooks()
+// getAllBooks()
