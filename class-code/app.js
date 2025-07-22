@@ -19,7 +19,22 @@ async function getStudents(){
 
 
 async function deleteStudent(){
-    await axios.delete("https://omar-ga-class.onrender.com/students/33")
+    try{
+        await axios.delete("https://omar-ga-class.onrender.com/students/33")
+    }
+    catch(error){
+        console.log("PROBLEM ERROR SOMETHING HAPPEN")
+    }
+
+    
 }
 
 deleteStudent()
+
+
+
+async function createStudent(){
+    const createdStudent = await axios.post("https://omar-ga-class.onrender.com/students",{studentName:"Mohammad"})
+}
+
+// createStudent()
