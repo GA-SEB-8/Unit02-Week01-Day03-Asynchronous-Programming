@@ -90,12 +90,24 @@ async function updateBook(){
 }
 
 
-updateBook()
+// updateBook()
 
 
 
+async function deleteBook(){
+    try{
+    const deletedBook = await Book.findByIdAndDelete("687f8936814cbbea199c5fdc")
+    console.log("Book Successfully Deleted")
+    }
+    catch(error){
+        console.log("Error Deleting", error)
+    }
+    
+}
 
 
+
+deleteBook()
 
 
  /* 
