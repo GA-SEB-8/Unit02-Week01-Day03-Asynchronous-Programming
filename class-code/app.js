@@ -15,4 +15,11 @@ async function getStudents(){
 
 }
 
-getStudents()
+// getStudents()
+
+
+async function deleteStudent(){
+    await axios.delete("https://omar-ga-class.onrender.com/students/33")
+}
+
+deleteStudent()
