@@ -21,12 +21,23 @@ connectToDB()
 // creating the schema and model
 
 const bookSchema = new mongoose.Schema({
-    title: String,
+    title: {
+        type:String,
+        required:true,
+        unique:true
+    },
     author: String,
     genres: [String], //array of strings
     price: Number,
     releaseYear: Number,
-    isBestSeller: Boolean
+    isBestSeller: {
+        type:Boolean,
+        default:false
+    },
+    rating:{
+        type:Number,
+        enum:[1,2,3,4,5]
+    }
 })
 
 // model
@@ -39,6 +50,7 @@ async function createBook(){
     // .create makes a new book for me
     const newBook = {
         title: "Harry Potter 2",
+        rating:6
 
     }
 
